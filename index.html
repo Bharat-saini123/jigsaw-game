@@ -10,7 +10,6 @@
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 body{margin:0;font-family:"Trebuchet MS",Arial,sans-serif;background:linear-gradient(#bde0fe,#ffd6e8);min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:10px;color:#4a3b69}
 h1{margin:6px 0;font-size:clamp(24px,6vw,36px)}
-.ad{width:100%;max-width:728px;min-height:60px;margin:8px 0;border:2px dashed #b8a9d9;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#8a7bb0;background:#ffffff80}
 .bar{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:6px 0}
 button.pill{font:inherit;font-weight:bold;font-size:16px;border:none;border-radius:999px;padding:10px 18px;background:#fff;color:#4a3b69;box-shadow:0 3px 0 #c9b8ee;cursor:pointer}
 button.pill.on{background:#7c5cff;color:#fff;box-shadow:0 3px 0 #5a3fd1}
@@ -31,9 +30,6 @@ button.pill.on{background:#7c5cff;color:#fff;box-shadow:0 3px 0 #5a3fd1}
 <body>
 <h1>🧩 Fun Puzzle</h1>
 
-<!-- AD SLOT TOP: paste your AdSense code here (keep child-directed settings ON) -->
-<div class="ad">Ad space</div>
-
 <div class="bar" id="modes">
   <button class="pill on" data-m="jig">🧩 Jigsaw</button>
   <button class="pill" data-m="slide">🔀 Sliding</button>
@@ -50,9 +46,6 @@ button.pill.on{background:#7c5cff;color:#fff;box-shadow:0 3px 0 #5a3fd1}
   <button class="pill" id="shuf">🔄 New Game</button>
   <button class="pill" id="peek">👀 Peek</button>
 </div>
-
-<!-- AD SLOT BOTTOM: keep ads away from the board so kids do not click by mistake -->
-<div class="ad" style="margin-top:30px">Ad space</div>
 
 <div id="win"><div><div class="big">🎉⭐🎉</div><h2>Well done! Puzzle complete!</h2><p id="wm"></p><button class="pill on" id="again">Play Again</button></div></div>
 
